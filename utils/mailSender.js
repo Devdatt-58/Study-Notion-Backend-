@@ -10,7 +10,7 @@ const mailSender = async (email,title,body) =>{
                 pass: process.env.MAIL_PASS
             }
         });
-
+        
         let info = await transporter.sendMail({
             from: 'StudyNotion || CodeHelp - by Babbar',
             to: `${email}`,

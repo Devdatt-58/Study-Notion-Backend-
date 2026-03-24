@@ -11,3 +11,4 @@ exports.connectWithDb = async () => {
         process.exit(1);
     }
 };
+

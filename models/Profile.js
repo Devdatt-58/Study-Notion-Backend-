@@ -15,7 +15,8 @@ const ProfileSchema = new mongoose.Schema({
     contactNumber: {
         type: Number
     },
-   
+
 });
 
 module.exports = mongoose.model('Profile', ProfileSchema);
+module.exports

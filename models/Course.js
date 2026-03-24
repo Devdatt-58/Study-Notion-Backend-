@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
 const CourseSchema = new mongoose.Schema({
-
     courseName: {
         type: String,
         required: true,
@@ -54,7 +53,6 @@ const CourseSchema = new mongoose.Schema({
             ref: "User"
         }
     ]
-
 });
 
 module.exports = mongoose.model('Course', CourseSchema);

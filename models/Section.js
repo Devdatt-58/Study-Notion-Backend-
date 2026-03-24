@@ -7,6 +7,7 @@ const SectionSchema = new mongoose.Schema({
         required: true,
     },
     subSections: [
+        
         {
             type: mongoose.Schema.Types.ObjectId,
             required: true,
@@ -16,3 +17,4 @@ const SectionSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('Section', SectionSchema);
+ 
