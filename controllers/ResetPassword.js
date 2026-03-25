@@ -3,7 +3,6 @@ const mailSender = require("../utils/mailSender");
 const bcrypt = require("bcrypt");
 const crypto = require("crypto");
 
-
 // resetPassowordtoken 
 exports.resetPasswordToken = async (req, res) => {
     try {
@@ -29,7 +28,7 @@ exports.resetPasswordToken = async (req, res) => {
                 token: token,
                 resetPasswordExpires: Date.now() + 5 * 60 * 1000,
             },
-            { new: true }
+            { new: true }   //update details return krne ke liye
         );
 
         // create mail containing the url 
@@ -58,8 +57,7 @@ exports.resetPasswordToken = async (req, res) => {
 
 
 
-
-// restPassword 
+// resetPassword 
 exports.resetPassword = async (req, res) => {
 
     try {

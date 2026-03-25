@@ -190,7 +190,7 @@ exports.login = async (req,res)=>{
                 success:false,
                 message:"user is not registred , please sign up first .",
             });
-        }
+        }  
 
         // generate Jwt , after password matching 
         if (await bcrypt.compare(password , user.password)){
