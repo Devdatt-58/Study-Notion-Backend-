@@ -2,7 +2,6 @@ const jwt = require("jsonwebtoken");
 const User = require("../models/User");
 require("dotenv").config();
 
-
 // auth middleware
 exports.auth = async (req, res, next) => {
   try {
@@ -41,8 +40,6 @@ exports.auth = async (req, res, next) => {
   }
 };
 
-
-
 // isStudent 
 exports.isStudent = async (req, res, next) => {
   try {
@@ -61,7 +58,6 @@ exports.isStudent = async (req, res, next) => {
     });
   }
 };
-
 
 // isInstructor
 exports.isInstructor = async (req, res, next) => {
